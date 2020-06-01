@@ -119,6 +119,15 @@ ul {
     text-decoration: none;
 }
 
+.contacts-link .icon {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+}
+
+.contacts-link .icon:hover {
+    fill: var(--accent-color);
+}
+
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
@@ -151,6 +160,7 @@ ul {
 
 .hero-title {
     margin-top: 0;
+    margin-bottom: 0;
     padding-bottom: 46px;
     padding-top: 200px;
 
@@ -248,6 +258,7 @@ ul {
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .work-list .item:not(:last-child) {
@@ -267,6 +278,7 @@ ul {
     text-align: center;
     padding-left: 0;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .team-list .item:not(:last-child) {
@@ -310,8 +322,35 @@ ul {
     padding-left: 0;
 }
 
-.team-list .social-item:not(:last-child) {
-    margin-right: 11px;
+.social-list .social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list .social-item {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.social-link {
+    width: 20px;
+    height: 20px;
+}
+
+.social-list .social-item:hover {
+    background-color: var(--accent-color);
+}
+
+.social-link .icon:hover {
+    fill: var(--primary-white-color);
+}
+
+.social-item .icon {
+    fill: #AFB1B8;
 }
 
 /* Клиенты */
@@ -328,7 +367,26 @@ ul {
 
 .customer-list .item {
     width: 170px;
-    align-content: center;
+    height: 90px;
+    background-color: var(--primary-white-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-list .icon {
+    fill: #AFB1B8;
+}
+
+.customer-list .icon:hover {
+    fill: var(--accent-color);
+}
+
+.customer-link {
+    height: 40px;
+    display: block;
 }
 
 .customer-list .item:not(:last-child) {
@@ -431,14 +489,34 @@ footer {
     margin-left: 10px;
 }
 
+.socials-item {
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-item:hover {
+    background-color: var(--accent-color);
+}
+
 .socials-item .socials-link {
     display: inline-block;
+    width: 20px;
+    height: 20px;
 }
 
 .socials {
     display: flex;
     padding-left: 0;
     align-items: center;
+}
+
+.socials-item .icon {
+    fill: var(--primary-white-color);
 }
 
 /* Портфолио */
