@@ -124,7 +124,7 @@ ul {
     margin-right: 10px;
 }
 
-.contacts-link .icon:hover {
+.contacts-link:hover .icon {
     fill: var(--accent-color);
 }
 
@@ -205,8 +205,22 @@ ul {
     margin-bottom: 0;
 }
 
-.feature-list .item:not(:last-child) {
+.feature-list .feature-item:not(:last-child) {
     margin-right: 29px;
+}
+
+.bg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.feature-item .icon {
+    display: block;
 }
 
 .feature-list .title {
@@ -230,6 +244,7 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    width: 270px;
 }
 
 /* Чем занимаемся */
@@ -341,11 +356,11 @@ ul {
     height: 20px;
 }
 
-.social-list .social-item:hover {
+.social-item:hover {
     background-color: var(--accent-color);
 }
 
-.social-link .icon:hover {
+.social-item:hover .icon {
     fill: var(--primary-white-color);
 }
 
@@ -365,10 +380,10 @@ ul {
     padding-left: 0;
 }
 
-.customer-list .item {
+.customer-item {
     width: 170px;
     height: 90px;
-    background-color: var(--primary-white-color);
+    color: inherit;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
@@ -380,12 +395,12 @@ ul {
     fill: #AFB1B8;
 }
 
-.customer-list .item:hover {
-    border: 1px solid var(--accent-color);
+.customer-item:hover .icon {
+    fill: var(--accent-color);
 }
 
-.customer-list .icon:hover {
-    fill: var(--accent-color);
+.customer-item:hover {
+    border: 1px solid var(--accent-color);
 }
 
 .customer-link {
@@ -393,7 +408,7 @@ ul {
     display: block;
 }
 
-.customer-list .item:not(:last-child) {
+.customer-list .customer-item:not(:last-child) {
     margin-right: 30px;
 }
 
